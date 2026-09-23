@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ABOUT US</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Corrección de la versión de W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Karma">
+
+  <style>
+    body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+    .hero-title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left w3-grey" style="display:none;z-index:3;width:22%;min-width:210px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button"> CLOSE MENU</a>
+    <a href="index.html" class="w3-bar-item w3-button">1. WEB</a>
+    <a href="gallery.html" class="w3-bar-item w3-button">2. GALLERY MOVIE POSTERS</a>
+    <a href="about-web.html" class="w3-bar-item w3-button">3. ABOUT WEB</a>
+    <a href="about-me.html" class="w3-bar-item w3-button">4. ABOUT ME</a>
+  </nav>
+
+  <div class="w3-top w3-white w3-card">
+    <!-- Corrección de display flex en el contenedor -->
+    <div style="display:flex; max-width:1200px; margin:auto; align-items:center;">
+      <button class="w3-button w3-padding-16 w3-xlarge" onclick="w3_open()">☰</button>
+      <div class="w3-padding-16 w3-center w3-large hero-title" style="flex:1">CINEMATIC WORLD WEB</div>
+    </div>
+  </div>
+
+  <main class="w3-content" style="max-width:1200px;margin-top:100px">
+    <section class="w3-container w3-padding-64 w3-center" 
+          style="max-width: 600px; margin: 0 auto; background-color: #800020; color: white; border-radius: 12px;">
+    
+      <h2 class="hero-title" style="color: white; font-style: italic;">Personal Information</h2>
+
+      <img src="./img/me.jpeg"
+          alt="Ignacio Morán"
+          style="display:block;margin:24px auto;width:150px;height:150px;border-radius:50%;object-fit:cover;" class="w3-card-2">
+
+      <div class="w3-padding-16" style="max-width:500px;margin:auto;">
+        </div>
+        <h4><b>Ignacio Morán Eraña</b></h4>
+        <h6><i>Erasmus Student from Asturias, Spain</i></h6>
+        <h6><i>Ingeniería Informática del Software, UNIOVI</i></h6>
+        <h6><i>Film Enthusiast</i></h6>
+
+        <p style="color: #e0e0e0;">
+          </div>
+          Content Management Systems Programming
+          </div>
+        </p>
+
+        <div class="w3-padding-16">
+          </div>
+          <p><b>Contact:</b> ignacio.moranerana@vvk.lt</p>
+      </div>
+    </section>
+
+    <footer class="w3-center w3-padding-32" style="margin-top: 20px;">
+      <p>© Cinematic World.</p>
+    </footer>
+  </main>
+
+  <script>
+    function w3_open() { document.getElementById("mySidebar").style.display = "block"; }
+    function w3_close() { document.getElementById("mySidebar").style.display = "none"; }
+  </script>
+
+</body>
+</html>

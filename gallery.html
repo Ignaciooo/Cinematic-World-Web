@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>GALLERY MOVIE POSTERS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Karma">
+
+  <style>
+    body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+    .hero-title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 992px) {
+      .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .movie-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .poster-img {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #f0f0f0;
+    }
+    .poster-img:hover { 
+      transform: translateY(-5px) scale(1.02); 
+      box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body class="w3-light-grey">
+
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left w3-grey" style="display:none;z-index:3;width:22%;min-width:210px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button"> CLOSE MENU</a>
+    <a href="index.html" class="w3-bar-item w3-button">1. WEB</a>
+    <a href="gallery.html" class="w3-bar-item w3-button">2. GALLERY MOVIE POSTERS</a>
+    <a href="about-web.html" class="w3-bar-item w3-button">3. ABOUT WEB</a>
+    <a href="about-me.html" class="w3-bar-item w3-button">4. ABOUT ME</a>
+  </nav>
+
+  <div class="w3-top w3-white w3-card">
+    <div class="w3-flex" style="max-width:1400px;margin:auto;align-items:center;">
+      <button class="w3-button w3-padding-16 w3-xlarge" onclick="w3_open()">☰</button>
+      <div class="w3-padding-16 w3-center w3-large hero-title" style="flex:1">CINEMATIC WORLD WEB</div>
+    </div>
+  </div>
+
+  <main class="w3-content" style="max-width:1400px;margin-top:80px;padding:0 16px;">
+    <section class="w3-padding-32">
+      <h2 class="w3-center hero-title" style="margin-bottom: 32px;">GALLERY MOVIE POSTERS</h2>
+
+      <div class="movie-grid w3-center">
+
+        <article>
+          <img src="img/Once Upon a Time in Hollywood.jpg" alt="Póster Película 1" class="poster-img">>
+          <h3 class="w3-large w3-margin-top">Once Upon a Time in Hollywood</h3>
+          <p class="w3-text-grey">Quentin Tarantino / 2019</p>
+        </article>
+
+        <article>
+          <img src="img/Hateful Eight.jpg" alt="Póster Película 2" class="poster-img">>
+          <h3 class="w3-large w3-margin-top">The Hateful Eight</h3>
+          <p class="w3-text-grey">Quentin Tarantino / 2015</p>
+        </article>
+
+        <article>
+          <img src="img/Pulp Fiction.jpg" alt="Póster Película 3" class="poster-img">>
+          <h3 class="w3-large w3-margin-top">Pulp Fiction</h3>
+          <p class="w3-text-grey">Quentin Tarantino / 1994</p>
+        </article>
+
+        <article>
+          <img src="img/Kill Bill 1.jpg" alt="Póster Película 4" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Kill Bill: Volumen 1</h3>
+          <p class="w3-text-grey">Quentin Tarantino / 2003</p>
+        </article>
+
+        <article>
+          <img src="img/2001 A Space Odyssey.jpg" alt="Póster Película 5" class="poster-img">
+          <h3 class="w3-large w3-margin-top">2001: A Space Odyssey</h3>
+          <p class="w3-text-grey">Stanley Kubrick / 1968</p>
+        </article>
+
+        <article>
+          <img src="img/Paths of Glory.jpg" alt="Póster Película 6" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Paths of Glory</h3>
+          <p class="w3-text-grey">Stanley Kubrick / 1957</p>
+        </article>
+
+        <article>
+          <img src="img/A Clockwork Orange.jpg" alt="Póster Película 7" class="poster-img">
+          <h3 class="w3-large w3-margin-top">A Clockwork Orange</h3>
+          <p class="w3-text-grey">Stanley Kubrick / 1971</p>
+        </article>
+
+        <article>
+          <img src="img/Full Metal Jacket.jpg" alt="Póster Película 8" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Full Metal Jacket 8</h3>
+          <p class="w3-text-grey">Stanley Kubrick / 1987</p>
+        </article>
+
+        <article>
+          <img src="img/Princess Mononoke.jpg" alt="Póster Película 9" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Princess Mononoke</h3>
+          <p class="w3-text-grey">Miyazaki / 1997</p>
+        </article>
+
+        <article>
+          <img src="img/Spirited Away.jpg" alt="Póster Película 10" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Spirited Away</h3>
+          <p class="w3-text-grey">Miyazaki / 2001</p>
+        </article>
+
+        <article>
+          <img src="img/Porco Rosso.jpg" alt="Póster Película 11" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Porco Rosso</h3>
+          <p class="w3-text-grey">Miyazaki / 1992</p>
+        </article>
+
+        <article>
+          <img src="img/Grave of the Fireflies.jpg" alt="Póster Película 12" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Grave of the Fireflies</h3>
+          <p class="w3-text-grey">Miyazaki / 1988</p>
+        </article>
+
+        <article>
+          <img src="img/Woll Of Wall Street.jpg" alt="Póster Película 13" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Woll of Wall Street</h3>
+          <p class="w3-text-grey">Martin Scorsese / 2013</p>
+        </article>
+
+        <article>
+          <img src="img/Taxi Driver.jpg" alt="Póster Película 14" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Taxi Driver</h3>
+          <p class="w3-text-grey">Martin Scorsese / 1976</p>
+        </article>
+
+        <article>
+          <img src="img/Goodfellas.jpg" alt="Póster Película 15" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Goodfellas</h3>
+          <p class="w3-text-grey">Martin Scorsese / 1990</p>
+        </article>
+
+        <article>
+          <img src="img/Raging Bull.jpg" alt="Póster Película 16" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Racing Bull</h3>
+          <p class="w3-text-grey">Martin Scorsese / 1980</p>
+        </article>
+
+        <article>
+          <img src="img/E.T.jpg" alt="Póster Película 17" class="poster-img">
+          <h3 class="w3-large w3-margin-top">E.T</h3>
+          <p class="w3-text-grey">Steven Spielberg / 1982</p>
+        </article>
+
+        <article>
+          <img src="img/Jaws.jpg" alt="Póster Película 18" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Jaws</h3>
+          <p class="w3-text-grey">Steven Spielberg / 1975</p>
+        </article>
+
+        <article>
+          <img src="img/Catch Me If You Can.jpg" alt="Póster Película 19" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Catch Me if You Can</h3>
+          <p class="w3-text-grey">Steven Spielberg / 2002</p>
+        </article>
+
+        <article>
+          <img src="img/Saving Private Ryan.jpg" alt="Póster Película 20" class="poster-img">
+          <h3 class="w3-large w3-margin-top">Saving Private Ryan</h3>
+          <p class="w3-text-grey">Steven Spielberg / 1998</p>
+        </article>      
+
+      </div>
+    </section>
+
+    <footer class="w3-center w3-padding-32" style="margin-top: 60px;">
+      <p>© Cinematic World.</p>
+    </footer>
+  </main>
+
+  <script>
+    function w3_open() { document.getElementById("mySidebar").style.display = "block"; }
+    function w3_close() { document.getElementById("mySidebar").style.display = "none"; }
+  </script>
+
+</body>
+</html>
